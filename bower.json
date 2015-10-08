@@ -1,0 +1,22 @@
+{
+  "name": "three-starter-kit-ts",
+  "version": "0.0.0",
+  "homepage": "https://github.com/k-may/three-starter-kit-ts",
+  "authors": [
+    "k-may <kevmayo@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "threejs": "*",
+    "jquery": "~2.1.4",
+    "underscore": "~1.8.3"
+  }
+}
