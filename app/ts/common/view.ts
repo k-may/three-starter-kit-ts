@@ -28,6 +28,7 @@ class View implements IView {
         this.z = z;
     }
 
+
     onResize(width:number, height:number):void {
         this.width = width;
         this.height = height;
@@ -60,3 +61,4 @@ class View implements IView {
         this.el = document.createElement("div");
     }
 }
+export = View;

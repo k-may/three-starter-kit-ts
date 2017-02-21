@@ -1,9 +1,7 @@
-///<reference path="../../../typings/underscore/underscore.d.ts"/>
-///<reference path="../../../typings/es6-promise/es6-promise.d.ts"/>
-///<reference path="../../../typings/threejs/three.d.ts"/>
+import THREE = require("three");
 
 /**
- * Created by kev on 15-09-30.
+; * Created by kev on 15-09-30.
  */
 
 interface  IUniform {
@@ -110,7 +108,7 @@ class ShaderData {
 
         if (!this.mesh) {
             var geometry:THREE.PlaneGeometry = new THREE.PlaneGeometry(2, 2);
-            geometry.dynamic = true;
+            //geometry. //dynamic = true;
             this.mesh = new THREE.Mesh(geometry);
         }
 
@@ -138,3 +136,5 @@ class ShaderData {
     }
 
 }
+
+export = ShaderData

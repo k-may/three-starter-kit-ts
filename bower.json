@@ -18,5 +18,9 @@
     "threejs": "*",
     "jquery": "~2.1.4",
     "underscore": "~1.8.3"
+  },
+  "devDependencies": {
+    "es6-shim": "^0.35.3",
+    "requirejs": "^2.3.2"
   }
 }

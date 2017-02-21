@@ -1,6 +1,6 @@
-///<reference path="view.ts"/>
-///<reference path="../data/shader_data.ts"/>
-///<reference path="../../../typings/threejs/three.d.ts"/>
+import * as THREE from 'three';
+import View = require("./view");
+import ShaderData = require("../data/shader_data");
 
 /**
  * Created by kev on 15-09-30.
@@ -24,12 +24,11 @@ class ShaderView extends View {
 
         this.createShaderData();
 
-        var _this = this;
+        var self = this;
         this.shaderData.start().then(function () {
-            _this.loaded = true;
-            _this.onResize(_this.width, _this.height);
+            self.loaded = true;
+            self.onResize(self.width, self.height);
         });
-
     }
 
     createShaderData():void {
@@ -52,3 +51,5 @@ class ShaderView extends View {
         this.shaderData.render(this.renderer);
     }
 }
+
+export = ShaderView;
